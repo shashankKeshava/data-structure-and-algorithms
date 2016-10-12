@@ -1,0 +1,1 @@
+npm remove iedb-{config,utils} && npm i -S iedb-config iedb-utils
