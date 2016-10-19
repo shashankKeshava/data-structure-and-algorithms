@@ -1,1 +1,1 @@
-npm remove iedb-utils && npm i -S iedb-utils
+npm remove iedb-utils && npm i iedb-utils
