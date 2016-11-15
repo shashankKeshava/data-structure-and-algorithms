@@ -1,0 +1,1 @@
+export PATH=$PATexport PATH=$PATH:~/webapps/effective-enigma/hackerRank/rm-iedb:~/webapps/effective-enigma/hackerRank/rm-iedb-config:~/webapps/effective-enigma/hackerRank/rm-iedb-utils
