@@ -14,3 +14,5 @@ function eRotation(n) {
 }
 
 eRotation('54');
+
+//Link:https://www.hackerrank.com/contests/projecteuler/challenges/euler168
