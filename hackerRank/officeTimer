@@ -6,7 +6,7 @@ TIME=$(zenity --entry --title="Timer" --text="Enter a duration for the timer.\n\
 
 sleep $TIME 
 
-zenity --info --title="Timer Complete" --text="Hooray time to leave.\n\n It has been $TIME."
+notify-send "Hooray time to leave. It has been $TIME."
 
 
 #Run cmd as officeTimer &
