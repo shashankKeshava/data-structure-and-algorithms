@@ -9,6 +9,7 @@
   "author": "Shashank Keshava (shashankngs@gmail.com)",
   "license": "ISC",
   "dependencies": {
-    "fs": "0.0.1-security"
+    "fs": "0.0.1-security",
+    "nodemailer": "^2.7.0"
   }
 }
