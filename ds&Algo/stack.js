@@ -3,8 +3,7 @@ var Stack = function() {
     this.storge = {};
 
     this.push = function(data) {
-        this.storge[this.count] = data;
-        this.count++;
+        this.storge[this.count++] = data;
     };
 
     this.pop = function() {
