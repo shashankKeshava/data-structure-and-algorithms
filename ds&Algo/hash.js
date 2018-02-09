@@ -8,7 +8,7 @@ var hash = (string, max) => {
     return hash % max;
   };
 
-  let HashTable = function() {
+let HashTable = function() {
 
     let storage = [];
     const storageLimit = 14;
