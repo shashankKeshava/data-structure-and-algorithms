@@ -97,7 +97,7 @@ class BST {
 
                 //Check if node has only one child (Right)
                 if (node.left == null)
-                    return node.right;
+                return node.right;
 
                 //Check if node has only one child (Left)
                 if (node.right == null)
@@ -197,6 +197,7 @@ class BST {
         let result = [];
         let Q = [];
         if (this.root != null) {
+            // Push entire BST in array this becomes a Queue
             Q.push(this.root);
             while (Q.length > 0) {
                 let node = Q.shift();
@@ -225,12 +226,14 @@ bst.add(3);
 bst.add(7);
 bst.remove(4);
 bst.add(9);
-console.log(bst.print());
+//console.log(bst.print());
+// console.log(bst.findMinHeight());
+// console.log(bst.findMaxHeight());
 // console.log(bst.print()); console.log(bst.findMinHeight());
 // console.log(bst.findMaxHeight()); console.log(bst.isBalanced());
-// console.log(bst.inOrder());
-// console.log(bst.preOrder());
-// console.log(bst.postOrder());
-// console.log(bst.levelOrder());
+console.log(bst.inOrder());
+console.log(bst.preOrder());
+console.log(bst.postOrder());
+console.log(bst.levelOrder());
 // console.log(bst.findMin()); console.log(bst.findMax());
 // console.log(bst.isPresent(51));
