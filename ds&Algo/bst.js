@@ -19,7 +19,7 @@ class BST {
             this.root = new Node(data);
             return;
         } else {
-            const searchTree = function(node) {
+            const searchTree = function (node) {
                 if (data < node.data) {
                     if (node.left === null) {
                         node.left = new Node(data);
@@ -85,17 +85,25 @@ class BST {
         return false;
     }
     remove(data) {
-        const removeNode = function(node, data) {
-            if (node === null) return null;
+        const removeNode = function (node, data) {
+            if (node === null)
+                return null;
 
             if (data == node.data) {
+                //Check if node has no children
                 if (node.left == null && node.right == null) {
                     return null;
                 }
-                if (node.left == null) return node.right;
 
-                if (node.right == null) return node.left;
+                //Check if node has only one child (Right)
+                if (node.left == null)
+                    return node.right;
 
+                //Check if node has only one child (Left)
+                if (node.right == null)
+                    return node.left;
+
+                // If node has 2 Children
                 var tempNode = node.right;
                 while (tempNode.left !== null) {
                     tempNode = tempNode.left;
@@ -118,7 +126,8 @@ class BST {
     }
 
     findMinHeight(node = this.root) {
-        if (node == null) return -1;
+        if (node == null)
+            return -1;
         let left = this.findMinHeight(node.left);
         let right = this.findMinHeight(node.right);
         //console.log(left,right);
@@ -130,7 +139,8 @@ class BST {
     }
 
     findMaxHeight(node = this.root) {
-        if (node == null) return -1;
+        if (node == null)
+            return -1;
         let left = this.findMaxHeight(node.left);
         let right = this.findMaxHeight(node.right);
         if (left > right) {
@@ -140,7 +150,8 @@ class BST {
         }
     }
     inOrder() {
-        if (this.root == null) return null;
+        if (this.root == null)
+            return null;
         else {
             //node=this.root;
             var result = new Array();
@@ -155,7 +166,8 @@ class BST {
     }
 
     preOrder() {
-        if (this.root == null) return null;
+        if (this.root == null)
+            return null;
         else {
             var result = new Array();
             function traversePreOrder(node) {
@@ -168,7 +180,8 @@ class BST {
         }
     }
     postOrder() {
-        if (this.root == null) return null;
+        if (this.root == null)
+            return null;
         else {
             var result = new Array();
             function traversePostOrder(node) {
@@ -208,18 +221,16 @@ bst.add(2);
 bst.add(6);
 bst.add(1);
 bst.add(3);
-bst.add(5);
+//bst.add(5);
 bst.add(7);
 bst.remove(4);
 bst.add(9);
-//console.log(bst.print());
-//console.log(bst.findMinHeight());
-//console.log(bst.findMaxHeight());
-//console.log(bst.isBalanced());
-console.log(bst.inOrder());
-console.log(bst.preOrder());
-console.log(bst.postOrder());
-console.log(bst.levelOrder());
-//console.log(bst.findMin());
-//console.log(bst.findMax());
-//console.log(bst.isPresent(51));
+console.log(bst.print());
+// console.log(bst.print()); console.log(bst.findMinHeight());
+// console.log(bst.findMaxHeight()); console.log(bst.isBalanced());
+// console.log(bst.inOrder());
+// console.log(bst.preOrder());
+// console.log(bst.postOrder());
+// console.log(bst.levelOrder());
+// console.log(bst.findMin()); console.log(bst.findMax());
+// console.log(bst.isPresent(51));
