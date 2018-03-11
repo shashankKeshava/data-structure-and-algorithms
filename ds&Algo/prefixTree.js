@@ -57,7 +57,7 @@ let Trie = function() {
 			};
 		};
 		search(this.root, new String());
-		return words.length > 0 ? words : mo;
+		return words.length > 0 ? words : false;
 	};
 
 };

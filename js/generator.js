@@ -3,17 +3,17 @@ function* countAppleSales () {
     a = 0
     for (var i = 0; i < saleList.length - 1; i++) {
         a=yield saleList[i];
-        console.log(a);
+        // console.log(a);
     }
-    return console.log(a);
+    // return console.log(a);
   }
   var appleStore = countAppleSales(); // Generator { }
-  console.log(appleStore.next(a)); // { value: 3, done: false }
-  debugger
+//   console.log(appleStore.next(a)); // { value: 3, done: false }
+//   debugger
 
-  function a() {
-     return 1
-  }
+//   function a() {
+//      return 1
+//   }
 
   console.log(appleStore.next()); // { value: 7, done: false }
   console.log(appleStore.next()); // { value: 5, done: false }

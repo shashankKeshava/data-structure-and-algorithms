@@ -17,4 +17,4 @@ function anagramDelete(a, b) {
     console.log(count - (pair * 2));
 }
 
-anagramDelete('fcrxzwscanmligyxyvym', 'jxwtrhvujlmrpdoqbisbwhmgpmeoke');
+anagramDelete('fcrxzwscanmligyxyvym', 'aafdssfdsfcrxzwscanmligyxyvym');
